@@ -1,1 +1,5 @@
 .local/
+.cache/
+.bash_history
+.ipython/
+*.ipynb_checkpoints
