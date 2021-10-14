@@ -3,3 +3,4 @@
 .bash_history
 .ipython/
 *.ipynb_checkpoints
+.jupyter/
