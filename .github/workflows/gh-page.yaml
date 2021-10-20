@@ -31,9 +31,10 @@ jobs:
       run: |
         jupyter nbconvert --to=html --output=index.html --output-dir=docs mock.ipynb
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3.7.3
+      uses: peaceiris/actions-gh-pages@v3.8.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        cname: explore-git.sorosliu.xyz
         publish_branch: gh-pages
         publish_dir: ./docs
         user_name: "github-actions[bot]"
