@@ -2,7 +2,7 @@
 
 Curious about how Git works.
 
-go to https://explore-git.sorosliu.xyz/ for detailed explain.
+go to https://explore-git.sorosliu.xyz/ for detailed explanation.
 
 ## references
 - [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)  
