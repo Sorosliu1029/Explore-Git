@@ -11,6 +11,8 @@ go to https://explore-git.sorosliu.xyz/ for detailed explanation.
   Git object format, in bytes
 - [The Git Parable](https://tom.preston-werner.com/2009/05/19/the-git-parable.html)  
   design VCS from scratch, the design philosophy behind Git
+- [The Git Parable, with illustrations](http://practical-neuroimaging.github.io/git_parable.html)  
+  same as [Git Parable], with nice illustrations
 - [Design Git-like content management system](https://matthew-brett.github.io/curious-git/curious_journey.html)  
   like [Git Parable], design a content management system (Git is basically a content management system)
 - [Git Index file format](https://git-scm.com/docs/index-format/2.25.0)  
