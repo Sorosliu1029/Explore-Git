@@ -4,6 +4,8 @@ Curious about how Git works.
 
 go to https://explore-git.sorosliu.xyz/ for detailed explanation.
 
+![git structure](readme-screenshot.png)
+
 ## references
 - [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain)  
   take a peek into the internals of Git
