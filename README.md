@@ -2,7 +2,9 @@
 
 Curious about how Git works.
 
-go to https://explore-git.sorosliu.xyz/ for detailed explanation.
+Visit:
+- https://explore-git.sorosliu.xyz/ for detailed explanation
+- https://explore-git.sorosliu.xyz/mock.slides.html for presentation
 
 ![git structure](readme-screenshot.png)
 

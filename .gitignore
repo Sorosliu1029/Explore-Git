@@ -4,3 +4,4 @@
 .ipython/
 *.ipynb_checkpoints
 .jupyter/
+*.slides.html
