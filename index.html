@@ -15588,6 +15588,10 @@ Changes to be committed:
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">写入 tree object, 模拟 `git commit` 的第一部分操作</span>
+
+<span class="sd">tree object 的 </span>
+<span class="sd">- &lt;ascii type&gt; = tree</span>
+<span class="sd">- &lt;binary object data&gt; = sorted tree entries</span>
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="k">def</span> <span class="nf">write_tree_object</span><span class="p">(</span><span class="n">entries</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="n">TreeEntry</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
     <span class="n">sorted_entries</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">entries</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">e</span><span class="p">:</span> <span class="n">e</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
@@ -16069,7 +16073,11 @@ Changes to be committed:
 <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">写入 commit object, 模拟 `git commit` 的第二部分操作</span>
 
-<span class="sd">commit object 的格式如下：</span>
+<span class="sd">commit object 的 </span>
+<span class="sd">- &lt;ascii type&gt; = commit</span>
+<span class="sd">- &lt;binary object data&gt; = 见下</span>
+
+<span class="sd">binary object data 的格式如下：</span>
 
 <span class="sd">```</span>
 <span class="sd">tree &lt;tree_sha&gt;</span>
@@ -19383,7 +19391,7 @@ index 11b15b1..8cde782 100644
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>我们准备把上面做的改动提交了</p>
-<p>先来 <code>git add hello.py</code>, 这一步是把 working directory 里的 <code>hello.py</code> 暂存到 staging area 里。依然认为两步：</p>
+<p>先来 <code>git add hello.py</code>, 这一步是把 working directory 里的 <code>hello.py</code> 暂存到 staging area 里。依然分为两步：</p>
 <ul>
 <li>写 <code>.git/objects/</code> 里的 blob object 文件</li>
 <li>更新 <code>.git/index</code> 文件。该文件存的是 staging area 的状态</li>
